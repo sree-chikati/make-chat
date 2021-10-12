@@ -16,6 +16,7 @@ $(document).ready(() => {
   //socket listeners
   socket.on('new user', (username) => {
     console.log(`✋ ${username} has joined the chat! ✋`);
+    $(".users-online").append(`<div class="user-online">${username}</div>`);
   })
 
 })
