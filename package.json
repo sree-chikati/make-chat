@@ -2,10 +2,10 @@
   "name": "make-chat",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "test": "none"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sreenvitha <sree.chikati@gmail.com>",
   "license": "MIT",
