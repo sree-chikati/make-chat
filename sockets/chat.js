@@ -9,6 +9,10 @@ module.exports = (io, socket, onlineUsers) => {
       console.log(`✋ ${username} has joined the chat! ✋`);
       io.emit("new user", username);
     })
+
+    socket.on('new channel', (newChannel) => {
+        console.log(newChannel);
+    });
   
     socket.on('new message', (data) => {
       console.log(`🎤 ${data.sender}: ${data.message} 🎤`)
